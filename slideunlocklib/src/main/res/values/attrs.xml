@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--字体滚动-->
+    <declare-styleable name="ShiningFontView">
+        <attr name="sfv_startColor" format="color" />
+        <attr name="sfv_centerColor" format="color" />
+        <attr name="sfv_endColor" format="color" />
+    </declare-styleable>
+</resources>

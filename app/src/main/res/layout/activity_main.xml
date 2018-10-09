@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sf.gs.slideunlockview.MainActivity">
+
+    <sf.gs.slideunlocklib.SlideLayout
+        android:id="@+id/slide_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#0096FF">
+
+        <FrameLayout
+            android:id="@+id/slide_child"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1px"
+                android:layout_marginLeft="1px"
+                android:layout_marginRight="1px"
+                android:layout_marginTop="1px"
+                android:background="@drawable/slide_unlock_scroll_btn_bg" />
+
+            <ImageView
+                android:id="@+id/iv_slide_unlock_img"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/anim_sliding_tip"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <sf.gs.slideunlocklib.textview.ShiningFontView
+            android:id="@+id/tv_pickup_point_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="60dp"
+            android:paddingRight="15dp"
+            android:gravity="center"
+            android:text="--"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </sf.gs.slideunlocklib.SlideLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="滑动解锁"
+        />
+</RelativeLayout>
